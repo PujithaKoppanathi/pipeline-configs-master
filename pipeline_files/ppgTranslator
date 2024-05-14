@@ -1,0 +1,37 @@
+{
+    "us-east-1": {
+        "pga": "pga",
+        "pgb": "pgb",
+        "pgc": "pgc"
+    },
+    "us-east-2": {
+        "pga": "pga",
+        "pgb": "pgb",
+        "pgc": "pgc"
+    },
+    "eu-central-1": {
+        "pga": "pga",
+        "pgb": "pgb",
+        "pgc": "pgc"
+    },
+    "eu-west-2": {
+        "pga": "pga",
+        "pgb": "pgb",
+        "pgc": "pgc"
+    },
+    "ap-northeast-1": {
+        "pga": "pga",
+        "pgb": "pgc",
+        "pgc": "pgd"
+    },
+    "ap-southeast-1": {
+        "pga": "pga",
+        "pgb": "pgb",
+        "pgc": "pgc"
+    },
+    "ap-southeast-2": {
+        "pga": "pga",
+        "pgb": "pgb",
+        "pgc": "pgc"
+    }
+}

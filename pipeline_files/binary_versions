@@ -1,0 +1,6 @@
+{
+	"base_binaries": {
+		"terraform": "1.0.10",
+		"terragrunt": "0.35.10"
+	}
+}

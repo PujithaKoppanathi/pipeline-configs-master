@@ -1,0 +1,12 @@
+{
+  "packages": [
+    {
+      "name": "FDSCbase_configs.pkg",
+      "version": "v1.*.*"
+    },
+    {
+      "name": "FDSCmonitor_client.pkg",
+      "version": "v1.*.*"
+    }
+  ]
+}

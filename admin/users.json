@@ -1,0 +1,28 @@
+{
+	"alechnos": {
+		"timezone": "US"
+	},
+	"asingh": {
+		"boss": true,
+		"timezone": "US"
+	},
+	"jharvey": {
+		"timezone": "UK",
+		"dog": {
+			"name": "Rodney",
+			"age": 1
+		}
+	},
+	"mroman": {
+		"timezone": "US"
+	},
+	"sdas03": {
+		"timezone": "AP"
+	},
+	"Boris": {
+		"Access": "readonly"
+	},
+	"Trump": {
+		"Access": "developer"
+	}
+}

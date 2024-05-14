@@ -1,0 +1,32 @@
+{
+  "packages": [
+    {
+      "name": "FDSCbase_configs.pkg",
+      "version": "v1.2.*"
+    },
+    {
+      "name": "FDSClog_poster.pkg",
+      "version": "v0.2.*"
+    },
+    {
+      "name": "FDSCzml_config.pkg",
+      "version": "v1.*.*"
+    },
+    {
+      "name": "FDSCmonitor_client.pkg",
+      "version": "v1.3.*"
+    },
+    {
+      "name": "FDSCcache_services.pkg",
+      "version": "v0.2.*"
+    },
+    {
+      "name": "FDSCsymbol_store_server.pkg",
+      "version": "v0.*.*"
+    },
+    {
+      "name": "FDSCansible_rescue.pkg",
+      "version": "v1.*.*"          
+    }
+  ]
+} 

@@ -1,0 +1,22 @@
+#extracted via cloudinit during deploy as template for ansible runtime failure tasks
+- name: Cat Log Output to Variable
+  become: yes
+  shell: cat ./stdout
+  register: log
+- name: Cat Package Details to Variable
+  become: yes
+  shell: cat ./package_details.txt
+  register: package_details
+- name: Cat Package Name to Variable
+  become: yes
+  shell: 'cat package_details.txt | grep package_name | cut -d" " -f2'
+  register: package_name
+- name: Email Failure Details
+  mail:
+    subject: "Ansible Failure - {{ runtime_config.subscription_name }} / {{ ansible_hostname }} / {{ package_name.stdout }}"
+    from: ansible@factset.com
+    to: 
+       - "{{ user_email }}"
+    body: "Package Details\n\n{{ package_details.stdout }}\npackage_directory: {{ dir }}\n\nPlaybook Variables\n\nSite: {{ runtime_config.site }}\nEnvironment: {{ runtime_config.env }}\nID: {{ runtime_config.id }}\nScaleSet ID: {{ runtime_config.scale_set_id }}\nResource Group Name: {{ runtime_config.resource_group_name }}\nSubscription Name: {{ runtime_config.subscription_name }}\nPlacement Group: {{ runtime_config.pg }}\nAccount Email: {{ user_email }}\n\nPlaybook Output\n{{ log.stdout }}"
+    #attach:
+    #        #- stdout.log
